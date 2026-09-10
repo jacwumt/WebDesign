@@ -1,1 +1,4 @@
-This is my root repository for my Intro to Web Design course. You can find my assignment folders inside.
+Intro to Tenkara Fishing
+## A simple guide to a minimalist style of fly fishing
+
+This page introduces the basics of tenkara fishing. what it is and how it differs from traditional fly fishing.
