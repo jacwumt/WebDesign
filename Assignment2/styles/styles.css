@@ -50,4 +50,9 @@ footer {
 
 footer p {
   margin: 0;
+}img {
+  display: block;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
 }
