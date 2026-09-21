@@ -1,7 +1,7 @@
 
 
- Assignment 2 Reflection
+ Assignment 3 Reflection
 
-I am starting to feel more comfortable creating HTML pages and using CSS to change how a website looks. Building three connected pages helped me better understand navigation links and file paths. I also learned how to publish my changes and check the live website through GitHub Pages.
+This week was hard, grouping the main image and heading together and putting the gear into three cards made the page feel more organized. Using the same class for each card also meant I could change their styling together.
 
-I would like more practice with CSS and organizing files into the correct folders. I would also like more clarification on troubleshooting a website when an image or a new change does not appear immediately.
+I’d like more practice organizing files and making sure I’m editing and saving the right ones in VS Code.
