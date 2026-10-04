@@ -1,3 +1,0 @@
-I kept the blue, gray, and white palette because it feels calm and suits a simple fishing site. The light backgrounds and dark text keep the information readable for beginners. I optimized the rod photo in the first gear card so it loads faster. A component I might add is a side-by-side comparison of level and furled line, so a beginner could see the differences before choosing one.
-
-Website: https://jacwumt.github.io/WebDesign/Assignment5/index.html#rod-card
