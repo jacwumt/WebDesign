@@ -1,12 +1,13 @@
-# Assignment 5 - Asset Library & Responsive Design
+# Assignment 5
 
-## Discussion 5
+## Component Plan
 
-I kept the blue, gray, and white palette because it fits the calm, simple feel of the tenkara site. The palette image has five swatches, including light and dark neutrals for contrast.
+I want to add a comparison of level line and furled line. Both are mentioned on the site, but I haven't explained the differences yet. This would help someone decide which to try.
 
-I resized the rod close-up from 8000 by 4512 pixels to 1200 by 677 pixels and saved it as a smaller JPEG. The file went from about 2.55 MB to 84 KB. The home page uses the optimized version in the first gear card.
+I'd use two cards with a short description and the pros and cons of each. CSS Grid would put them next to each other, then stack them on screens 600px or smaller. I'd keep the colors and fonts already used on the site.
 
-- [Website and optimized rod photo](https://jacwumt.github.io/WebDesign/Assignment5/index.html#rod-card)
-- [Color palette](images/tenkara-color-palette.png)
+## Reflection
 
-This README currently covers the Discussion 5 preparation. The remaining Assignment 5 work is still in progress.
+The cards are probably what I'd reuse most. I can change the pictures and text without having to build the layout again.
+
+Using the same classes keeps the pages consistent and means fewer things to edit separately.
