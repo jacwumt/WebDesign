@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenkara Components</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <!-- ------------------------------------------------ -->
+  <!-- ------------------- NAV ------------------------ -->
+  <!-- ------------------------------------------------ -->
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="info.html">Gear</a></li>
+    </ul>
+  </nav>
+
+  <main class="component-library">
+    <!-- ------------------------------------------------ -->
+    <!-- ----------------- GALLERY ---------------------- -->
+    <!-- ------------------------------------------------ -->
+
+    <section class="gallery-section">
+      <h2>Tenkara at a Glance</h2>
+      <div id="gallery">
+        <div class="icon-item">
+          <img src="images/icon-rod.png" alt="Simple rod icon">
+          <p>Rod</p>
+        </div>
+        <div class="icon-item">
+          <img src="images/icon-line.png" alt="Simple fishing line icon">
+          <p>Line</p>
+        </div>
+        <div class="icon-item">
+          <img src="images/icon-fly.png" alt="Simple fly icon">
+          <p>Fly</p>
+        </div>
+        <div class="icon-item">
+          <img src="images/icon-fish.png" alt="Simple fish icon">
+          <p>Fish</p>
+        </div>
+        <div class="icon-item">
+          <img src="images/icon-mountain.png" alt="Simple mountain icon">
+          <p>Streams</p>
+        </div>
+        <div class="icon-item">
+          <img src="images/icon-net.png" alt="Simple landing net icon">
+          <p>Net</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ------------------------------------------------ -->
+    <!-- ------------------- TABLE ---------------------- -->
+    <!-- ------------------------------------------------ -->
+
+    <section class="component-box">
+      <h2>Basic Gear Guide</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Purpose</th>
+            <th>Simple Choice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rod</td>
+            <td>Casts and controls the line</td>
+            <td>10 to 13 foot rod</td>
+          </tr>
+          <tr>
+            <td>Line</td>
+            <td>Carries the fly</td>
+            <td>Level or furled line</td>
+          </tr>
+          <tr>
+            <td>Tippet</td>
+            <td>Connects the line to the fly</td>
+            <td>Light clear tippet</td>
+          </tr>
+          <tr>
+            <td>Fly</td>
+            <td>Attracts the fish</td>
+            <td>Kebari or other small fly</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- ------------------------------------------------ -->
+    <!-- -------------------- FORM ---------------------- -->
+    <!-- ------------------------------------------------ -->
+
+    <section class="component-box">
+      <h2>Ask a Tenkara Question</h2>
+      <form class="question-form" action="#" method="get">
+        <label for="component-name">Name</label>
+        <input type="text" id="component-name" name="name">
+
+        <label for="component-experience">Experience Level</label>
+        <select id="component-experience" name="experience">
+          <option value="new">New to tenkara</option>
+          <option value="some">Some experience</option>
+          <option value="experienced">Experienced angler</option>
+        </select>
+
+        <label for="component-topic">Question About</label>
+        <select id="component-topic" name="topic">
+          <option value="gear">Gear</option>
+          <option value="casting">Casting</option>
+          <option value="flies">Flies</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="component-question">Your Question</label>
+        <textarea id="component-question" name="question" rows="5"></textarea>
+
+        <button type="submit">Send Question</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 John Weber. All rights reserved.</p>
+  </footer>
+</body>
+</html>
