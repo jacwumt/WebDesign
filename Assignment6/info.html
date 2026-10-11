@@ -3,81 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tenkara Fishing Gear</title>
+  <title>Gear | Wizard Tenkara</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Roboto+Slab:wght@600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
+
+  <style>
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0 3rem;
+    }
+
+    .equipment-card {
+      padding: 1.5rem;
+      background: #ffffff;
+      color: #202936;
+      border: 1px solid #b8c4d1;
+      border-top: 4px solid #1e3a5f;
+      border-radius: 6px;
+    }
+
+    .equipment-art {
+      display: block;
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      margin: 0 auto 1.5rem;
+      background: #ffffff;
+    }
+
+    .equipment-card h2 {
+      margin: 0 0 0.75rem;
+      color: #1e3a5f;
+    }
+
+    .equipment-card p {
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 900px) {
+      .equipment-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .equipment-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .equipment-card {
+        padding: 1.25rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="info.html">Gear</a></li>
-    </ul>
-  </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <h1>Tenkara Fishing Gear</h1>
-    <h2>Everything Needed for a Simple Setup</h2>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img
+          src="images/wizard-tenkara-logo.png"
+          alt="Wizard Tenkara — Missoula, Montana"
+          width="1000"
+          height="400">
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="getting-started.html">Getting Started</a></li>
+          <li><a href="info.html" aria-current="page">Gear</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
-    <h2>The Rod</h2>
-    <p>A tenkara rod is long, lightweight, and telescopic. It can collapse to a short length for transportation and extend to around ten or twelve feet for fishing.</p>
+  <main id="main">
+    <div class="page-intro">
+      <p class="eyebrow">The equipment</p>
+      <h1>Gear</h1>
+      <p>
+        Rod, line, tippet, and kebari make the fishing setup.
+        A landing net and wading staff are useful additions.
+      </p>
+    </div>
 
-    <h2>Line and Tippet</h2>
-    <p>The fishing line attaches directly to the tip of the rod. A thin section of tippet connects the main line to the fly.</p>
+    <div class="equipment-grid">
+      <article class="equipment-card">
+        <svg class="equipment-art"
+             viewBox="0 0 320 250"
+             aria-hidden="true" focusable="false">
+          <image href="images/gear-icons.webp"
+                 width="960" height="640"></image>
+        </svg>
+        <h2>Rod</h2>
+        <p>
+          A long, flexible rod does the casting and helps control
+          the fly. Tenkara rods telescope down for carrying, and
+          the line attaches at the tip instead of passing through
+          guides to a reel.
+        </p>
+      </article>
 
-    <h2>Flies and Landing Net</h2>
-    <p>Traditional tenkara flies are called kebari. A small landing net can also help an angler safely land and release a fish.</p>
+      <article class="equipment-card">
+        <svg class="equipment-art"
+             viewBox="320 0 320 250"
+             aria-hidden="true" focusable="false">
+          <image href="images/gear-icons.webp"
+                 width="960" height="640"></image>
+        </svg>
+        <h2>Line</h2>
+        <p>
+          The main line carries the cast from the rod toward
+          the fly. Its length stays fixed while you fish.
+          I use PVC-coated or furled line because I like
+          how both cast and handle.
+        </p>
+      </article>
 
-    <h2>Basic Gear Guide</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Purpose</th>
-          <th>Simple Choice</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Rod</td>
-          <td>Casts and controls the line</td>
-          <td>10 to 13 foot rod</td>
-        </tr>
-        <tr>
-          <td>Line</td>
-          <td>Carries the fly</td>
-          <td>Level or furled line</td>
-        </tr>
-        <tr>
-          <td>Tippet</td>
-          <td>Connects the line to the fly</td>
-          <td>Light clear tippet</td>
-        </tr>
-        <tr>
-          <td>Fly</td>
-          <td>Attracts the fish</td>
-          <td>Kebari or other small fly</td>
-        </tr>
-      </tbody>
-    </table>
+      <article class="equipment-card">
+        <svg class="equipment-art"
+             viewBox="640 0 320 250"
+             aria-hidden="true" focusable="false">
+          <image href="images/gear-icons.webp"
+                 width="960" height="640"></image>
+        </svg>
+        <h2>Tippet</h2>
+        <p>
+          Tippet is the thin section between the main line
+          and the kebari. It makes the connection near the
+          fly less visible. Choose a strength within your
+          rod manufacturer's recommended limit.
+        </p>
+      </article>
 
-    <h2>Basic Setup</h2>
-    <ol>
-      <li>Extend the rod</li>
-      <li>Attach the line</li>
-      <li>Add the tippet and fly</li>
-      <li>Begin fishing</li>
-    </ol>
+      <article class="equipment-card">
+        <svg class="equipment-art"
+             viewBox="0 300 320 275"
+             aria-hidden="true" focusable="false">
+          <image href="images/gear-icons.webp"
+                 width="960" height="640"></image>
+        </svg>
+        <h2>Kebari</h2>
+        <p>
+          The artificial fly at the end of the tippet.
+          Thread and feathers form a small pattern around
+          the hook. Different kebari use different bodies
+          and feather arrangements.
+        </p>
+      </article>
+
+      <article class="equipment-card">
+        <svg class="equipment-art"
+             viewBox="320 300 320 275"
+             aria-hidden="true" focusable="false">
+          <image href="images/gear-icons.webp"
+                 width="960" height="640"></image>
+        </svg>
+        <h2>Landing Net</h2>
+        <p>
+          A net helps bring a fish under control at the
+          end of the fight. It also lets you keep the fish
+          in the water while preparing to remove the hook.
+        </p>
+      </article>
+
+      <article class="equipment-card">
+        <svg class="equipment-art"
+             viewBox="640 300 320 275"
+             aria-hidden="true" focusable="false">
+          <image href="images/gear-icons.webp"
+                 width="960" height="640"></image>
+        </svg>
+        <h2>Wading Staff</h2>
+        <p>
+          A staff provides another point of contact when
+          moving over uneven streambeds. It can help with
+          balance and checking your next step, but it
+          doesn't make deep or fast water safe.
+        </p>
+      </article>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 John Weber. All rights reserved.</p>
+  <footer class="site-footer">
+    <p><strong>Wizard Tenkara</strong> · Missoula, Montana</p>
+    <p>A fishing site by John Weber · 2026</p>
+    <p>
+      <a href="about.html">About tenkara</a> ·
+      <a href="getting-started.html">Start here</a>
+    </p>
   </footer>
 </body>
 </html>

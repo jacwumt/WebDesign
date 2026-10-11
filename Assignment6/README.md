@@ -1,15 +1,9 @@
-# Assignment 5
+# Assignment 6 — Wizard Tenkara
 
-## Component Plan
+I plan to keep developing this site for my final project.
 
-- Webpage the component will be applied to: Gear page (info.html).
-- Type of component: Two comparison cards for level line and furled line.
-- Why it's needed: To help beginners understand the differences and choose which line to try.
-- Features: A heading, short description, and list of pros and cons for each line.
-- What you'll use to build it: CSS Grid, with the cards side by side on larger screens and stacked on screens 600px or smaller.
+Three things I want to remember when I come back to it:
 
-## Reflection
-
-The cards are probably what I'd reuse most. I can change the pictures and text without having to build the layout again.
-
-Using the same classes keeps the pages consistent and means fewer things to edit separately.
+1. Keep the gear page simple and educational. The six illustrated cards work better for this site than product recommendations.
+2. Add more of my own fishing photos. The Rock Creek photo makes the site feel more personal, and I'd like to build on that.
+3. Keep checking the mobile layout when adding content. The navigation, images, and cards need to stay easy to use on a small screen.
