@@ -1,0 +1,70 @@
+/* Missoula Community Life - Assignment7
+   Shared header, navigation, skip link, button and footer adapted from Assignment6.
+   New components: .community-intro (Flexbox), .activity-grid / .activity-card (Grid).
+*/
+:root { --ink:#243b3a; --green:#1c665e; --paper:#f7f5ef; --line:#cbd4ce; --white:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; line-height:1.65; }
+h1,h2,h3 { line-height:1.2; margin:0 0 1rem; }
+h1 { font-size:clamp(2rem,4vw,3.4rem); letter-spacing:-.025em; }
+h2 { font-size:1.8rem; }
+h3 { font-size:1.3rem; }
+p { margin:0 0 1rem; }
+a { color:var(--green); text-underline-offset:4px; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible { outline:3px solid #a64b24; outline-offset:5px; }
+img { display:block; max-width:100%; height:auto; }
+section[id],article[id] { scroll-margin-top:1rem; }
+.skip-link { position:absolute; top:-100px; left:1rem; padding:.6rem 1rem; background:white; z-index:5; }
+.skip-link:focus { top:1rem; }
+.site-header { background:white; border-bottom:1px solid var(--line); }
+.header-inner,.footer-inner { max-width:1120px; margin:auto; padding:1.3rem 1.5rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+.brand { color:var(--ink); text-decoration:none; font-size:1.3rem; font-weight:bold; line-height:1.15; }
+.brand span { color:var(--green); font-size:1rem; }
+nav ul { display:flex; flex-wrap:wrap; list-style:none; gap:.4rem 1.5rem; padding:0; margin:0; }
+nav a { display:block; padding:.6rem 0; font-weight:bold; text-decoration:none; border-bottom:3px solid transparent; }
+nav a:hover,nav a[aria-current="page"] { border-color:var(--green); }
+main { width:min(1080px,calc(100% - 3rem)); margin:2.5rem auto 4rem; }
+.eyebrow { color:var(--green); text-transform:uppercase; letter-spacing:.1em; font-size:.8rem; font-weight:bold; }
+.small { font-size:.85rem; }
+.button { display:inline-block; width:fit-content; background:var(--green); color:white; padding:.75rem 1.2rem; text-decoration:none; border-radius:4px; font-weight:bold; }
+.button:hover { background:#124b45; }
+/* NEW: nested Flexbox. Image and copy are a row; the copy is a column. */
+.community-intro { display:flex; align-items:center; gap:2.5rem; padding:1.5rem; background:white; border:1px solid var(--line); }
+.community-intro>img { width:46%; aspect-ratio:4/5; object-fit:cover; border-radius:4px; }
+.intro-copy { display:flex; flex-direction:column; align-items:flex-start; gap:1rem; flex:1; min-width:0; }
+.intro-copy p,.intro-copy h1 { margin:0; }
+.section { margin-top:3.5rem; }
+.section-intro { margin-bottom:1.5rem; }
+.section-end { margin-top:1.5rem; }
+/* NEW: 3 columns when they fit; one column on narrow screens without overflow. */
+.activity-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:1.5rem; }
+.activity-card { display:flex; flex-direction:column; background:white; border:1px solid var(--line); border-radius:5px; overflow:hidden; }
+.photo-placeholder { min-height:130px; background:#e3eae3; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#3d5b4d; }
+.photo-placeholder span { font-size:1.2rem; }
+.photo-placeholder small { font-size:.75rem; margin-top:.25rem; }
+.card-copy { padding:1.4rem; display:flex; flex-direction:column; flex:1; }
+.card-copy>a { margin-top:auto; padding-top:.75rem; font-weight:bold; }
+dl { margin:0 0 1rem; font-size:.9rem; }
+dt { font-weight:bold; }
+dd { margin:0 0 .6rem; }
+.page-heading { max-width:760px; margin:1rem 0 2.5rem; }
+.category-links { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem 1.5rem; margin:0 0 2.5rem; padding:1rem 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.category-links a { font-size:.95rem; }
+.visit-note { margin-top:2.5rem; padding:1.5rem; background:#e3eae3; }
+.visit-note h2 { font-size:1.3rem; }
+.visit-note p { margin:0; }
+.text-section { max-width:800px; margin:0 0 2rem; padding:1.8rem; background:white; border:1px solid var(--line); }
+.text-section h2 { font-size:1.4rem; }
+.text-section p:last-child { margin:0; }
+.site-footer { border-top:1px solid var(--line); background:white; }
+.footer-inner p { margin:0; }
+.footer-note { max-width:1120px; margin:0 auto; padding:0 1.5rem 1.5rem; }
+@media(max-width:700px) {
+ .community-intro { flex-direction:column; gap:1.5rem; }
+ .community-intro>img { width:100%; aspect-ratio:3/2; }
+ main { width:calc(100% - 2rem); margin-top:1.5rem; }
+ .header-inner { gap:1rem; }
+ .section { margin-top:2.5rem; }
+ .text-section { padding:1.3rem; }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Component Library | Missoula Community Life</title>
+  <meta name="description" content="A local guide to arts, gaming, outdoors, history, and independent businesses in Missoula.">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Shared navigation adapted from Assignment6. -->
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="index.html">Missoula<br><span>Community Life</span></a>
+  <nav aria-label="Library navigation"><ul><li><a href="index.html">Workspace</a></li><li><a href="components.html">Components</a></li></ul></nav>
+</div></header>
+<main id="main">
+<!-- NEW FLEXBOX COMPONENT: image and text sit side by side, then stack on small screens. -->
+<section class="community-intro" aria-labelledby="home-title">
+  <img src="images/missoula.jpg" alt="Downtown Missoula beside the Clark Fork River" width="1200" height="800">
+  <div class="intro-copy">
+    <p class="eyebrow">A local guide</p>
+    <h1 id="home-title">Find something to do in Missoula.</h1>
+    <p>Art, games, a little history, or a walk by the river. Find local activities that fit your interests and check the details before you go.</p>
+    <a class="button" href="#featured-title">Explore activities</a>
+  </div>
+</section>
+<section class="section" aria-labelledby="featured-title">
+  <h2 id="featured-title">A few places to start</h2>
+  <p class="section-intro">Three different ways to spend an afternoon.</p>
+  <!-- NEW GRID COMPONENT: reusable activity cards in responsive columns. -->
+  <div class="activity-grid"><article class="activity-card" id="arts">
+  <div class="photo-placeholder" aria-hidden="true"><span>Arts</span><small>Photo to add</small></div>
+  <div class="card-copy">
+    <h3>Missoula Art Museum</h3>
+    <p>Explore contemporary art in a downtown museum with free admission.</p>
+    <dl><dt>Location</dt><dd>335 Pattee Street</dd><dt>Cost</dt><dd>Free admission</dd></dl>
+    
+    <a href="https://www.missoulaartmuseum.org/plan-your-visit">Plan a museum visit <span aria-hidden="true">↗</span></a>
+  </div>
+</article><article class="activity-card" id="outdoors">
+  <div class="photo-placeholder" aria-hidden="true"><span>Outdoors</span><small>Photo to add</small></div>
+  <div class="card-copy">
+    <h3>Riverfront Trails</h3>
+    <p>Take a walk beside the Clark Fork and explore the parks connected by the riverfront paths.</p>
+    <dl><dt>Location</dt><dd>Downtown, along both riverbanks</dd><dt>Cost</dt><dd>No trail admission fee</dd></dl>
+    
+    <a href="https://www.ci.missoula.mt.us/2209/Riverfront-Trails">View the trail information <span aria-hidden="true">↗</span></a>
+  </div>
+</article><article class="activity-card" id="history">
+  <div class="photo-placeholder" aria-hidden="true"><span>History</span><small>Photo to add</small></div>
+  <div class="card-copy">
+    <h3>Historical Museum at Fort Missoula</h3>
+    <p>Learn about local history through museum exhibits and the historic grounds.</p>
+    <dl><dt>Location</dt><dd>3400 Captain Rawn Way</dd><dt>Cost</dt><dd>Free for Missoula County residents; other rates apply</dd></dl>
+    
+    <a href="https://fortmissoulamuseum.org/visit/">Plan a history visit <span aria-hidden="true">↗</span></a>
+  </div>
+</article></div>
+  <p class="section-end"><a href="#featured-title">See all activities →</a></p>
+</section></main>
+<footer class="site-footer"><div class="footer-inner">
+  <p>Missoula Community Life <span class="small">/ John Weber</span></p>
+  <a href="index.html">About this guide</a>
+</div><p class="small footer-note">Student website draft. Check official links for current details.</p></footer>
+</body>
+</html>
