@@ -36,3 +36,26 @@ Header/navigation, skip link, basic button and footer patterns adapted from Assi
 
 ## Estimated workload
 Keep the original 28 hours at $35/hour ($980). Reuse reduces duplicated navigation and basic styling work; research, image preparation, mobile checks and revisions still need time. These are estimates, not logged hours.
+## Discussion 8 - Updated client notes
+
+Client: Local Community Life
+Decision-maker: Morgan
+
+- The site should help Missoula residents of different ages, abilities, interests and budgets find community activities beyond competitive sports.
+- Visitors should be able to find activities by interest, cost, location and accessibility.
+- Listings should have accurate, current information that residents can trust.
+- The client would like ways for visitors to receive event updates, submit an event or business, and/or volunteer.
+- Images should represent a variety of people and activities, with permission to use them.
+
+### Outstanding items
+
+- Add accessibility information to the activity listings.
+- Our category links currently jump to cards; they do not filter listings.
+- Replace photo placeholders and confirm permission for the home image.
+- Confirm the client's preferred contact information and participation feature.
+- Establish who will maintain the listings.
+
+### Questions for Morgan
+
+1. For the first version, would you prioritize signing up for event updates or letting visitors submit activities and businesses?
+2. Who would keep the listings updated, especially details like cost and accessibility?
